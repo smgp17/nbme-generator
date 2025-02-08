@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Untitled</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBME Quiz Generator</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.14.305/pdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tesseract.js/4.0.2/tesseract.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="upload-container">
+        <h2>Upload Your NBME Exam File</h2>
+        <input type="file" id="file-input" accept="application/pdf, image/*" multiple>
+        <button onclick="handleFileUpload()">Upload & Generate Quiz</button>
+        <p id="progress"></p>
+    </div>
+
+    <div id="quiz-container" style="display: none;">
+        <h2>NBME Interactive Quiz</h2>
+        <div id="question"></div>
+        <div id="options"></div>
+        <button id="next-btn" onclick="nextQuestion()" style="display: none;">Next</button>
+        <p id="score" style="display: none;"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
